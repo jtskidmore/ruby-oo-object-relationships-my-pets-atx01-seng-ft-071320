@@ -7,6 +7,6 @@ class Dog
     @owner = owner
   end
 
-  
+
   # code goes here
 end
