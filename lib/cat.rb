@@ -11,6 +11,14 @@ class Cat
     self.class.all << self
   end
 
+  def mood
+    @mood
+  end
+
+  def mood=(mood)
+    @mood = mood
+  end
+
   def owner
     @owner
   end
