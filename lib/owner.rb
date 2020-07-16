@@ -5,7 +5,7 @@ class Owner
     @species = human
   end
 
-  def species 
+  def species
     @human
   end
   # code goes here
