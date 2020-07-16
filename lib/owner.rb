@@ -74,5 +74,11 @@ class Owner
       dog.owner = nil
     end
   end
+
+  def list_pets
+    Dog.all.select do |dog|
+      dog.owner = self
+    end
+  end
   # code goes here
 end
