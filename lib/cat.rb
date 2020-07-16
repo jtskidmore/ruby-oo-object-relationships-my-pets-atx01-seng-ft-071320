@@ -15,6 +15,11 @@ class Cat
     @owner
   end
 
+  def owner(owner)
+    @owner = owner
+  end
+
+
   def self.all
     @@all
   end
