@@ -76,12 +76,19 @@ class Owner
   end
 
   def list_pets
-    Dog.all.select do |dog|
-      dog.owner == self
+    dog_counter = 0
+    Dog.all.each do |dog|
+      if dog.owner == self
+        dog_counter += 1
+      end
     end
-    Cat.all.select do |cat|
-      cat.owner == self
+    cat_counter = 0
+    Cat.all.each do |cat|
+      if cat.owner == self
+        cat_counter += 1
+      end
     end
+    "I have #{dog_counter} dog(s), and #{cat_counter} cat(s)."
   end
   # code goes here
 end
