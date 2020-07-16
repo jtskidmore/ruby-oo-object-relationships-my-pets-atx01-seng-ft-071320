@@ -79,6 +79,9 @@ class Owner
     Dog.all.select do |dog|
       dog.owner == self
     end
+    Cat.all.select do |cat|
+      cat.owner == self
+    end
   end
   # code goes here
 end
