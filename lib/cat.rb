@@ -12,6 +12,7 @@ class Cat
   end
 
   def owner
+    @owner
   end
 
   # code goes here
