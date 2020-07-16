@@ -23,7 +23,7 @@ class Dog
     @name
   end
 
-  def self.dogs
+  def self.all
     @@all
   end
 
