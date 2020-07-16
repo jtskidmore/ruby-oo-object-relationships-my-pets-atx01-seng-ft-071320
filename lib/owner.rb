@@ -77,7 +77,7 @@ class Owner
 
   def list_pets
     Dog.all.select do |dog|
-      dog.owner = self
+      dog.owner == self
     end
   end
   # code goes here
