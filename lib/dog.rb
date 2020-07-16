@@ -9,10 +9,10 @@ class Dog
   end
 
   def name
-    @name 
+    @name
   end
 
-  
+
 
 
   # code goes here
