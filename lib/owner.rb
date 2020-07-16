@@ -69,6 +69,10 @@ class Owner
       cat.mood = "nervous"
       cat.owner = nil
     end
+    Dog.all.each do |dog|
+      dog.mood = "nervous"
+      dog.owner = nil
+    end
   end
   # code goes here
 end
