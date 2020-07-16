@@ -2,10 +2,13 @@ class Dog
 
   attr_accessor :owner
 
+  @@all = []
+
   def initialize (name, owner)
     @name = name
     @owner = owner
     @mood = "nervous"
+    self.class.all << self
   end
 
   def mood
@@ -20,7 +23,9 @@ class Dog
     @name
   end
 
-
+  def self.dogs
+    @@all
+  end
 
 
   # code goes here
